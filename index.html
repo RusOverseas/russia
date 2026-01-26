@@ -34,6 +34,10 @@
         .position-card li:last-child { border-bottom: none; }
         .salary-section { background: linear-gradient(135deg, #c41e3a 0%, #a01a2f 100%); color: white; padding: 3rem 2rem; border-radius: 10px; margin: 3rem 0; text-align: center; }
         .salary-amount { font-size: 3rem; font-weight: 700; margin: 1rem 0; color: #ffd700; }
+        .benefits-section { background: white; padding: 3rem 2rem; border-radius: 10px; margin: 3rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .benefit-item { text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #c41e3a; }
+        .benefit-item .icon { font-size: 3rem; margin-bottom: 1rem; }
         .hindi-subtitle { font-size: 1.8rem; opacity: 0.9; margin-bottom: 1.5rem; }
         .hindi-text { opacity: 0.9; font-size: 0.95rem; margin-top: 0.5rem; }
         .sochi-highlight { background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
@@ -77,9 +81,14 @@
                 <p>Skilled Workers Required</p>
             </div>
             <div class="info-card">
-                <h3>Salary</h3>
-                <div class="value">₽72K</div>
-                <p>Per Month</p>
+                <h3>Daily Hours</h3>
+                <div class="value">10 Hrs</div>
+                <p>Including Breaks | ब्रेक सहित</p>
+            </div>
+            <div class="info-card">
+                <h3>Work Week</h3>
+                <div class="value">6 Days</div>
+                <p>Per Week | प्रति सप्ताह</p>
             </div>
             <div class="info-card">
                 <h3>Location</h3>
@@ -165,21 +174,64 @@
             </div>
         </section>
 
+        <section class="benefits-section">
+            <h2 style="color: #003399; text-align: center; margin-bottom: 2rem;">🎁 Complete Benefits Package | संपूर्ण लाभ पैकेज</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="icon">⏰</div>
+                    <h4>Work Schedule</h4>
+                    <p>10 hours/day (incl. breaks) | 6 days/week</p>
+                    <p class="hindi-text">10 घंटे/दिन (ब्रेक सहित) | 6 दिन/सप्ताह</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">💰</div>
+                    <h4>Overtime Pay</h4>
+                    <p>Available as needed - Paid per Russian Labour Laws</p>
+                    <p class="hindi-text">आवश्यकता अनुसार - रूसी श्रम कानून अनुसार भुगतान</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">🏖️</div>
+                    <h4>Paid Leave</h4>
+                    <p>1 month paid leave after 11 months | 11+1 = 12 months salary</p>
+                    <p class="hindi-text">11 महीने पूरे करने पर 1 महीने की पेड लीव | 11+1=12 महीने वेतन</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">🏥</div>
+                    <h4>Health Insurance</h4>
+                    <p>Complete coverage provided by company</p>
+                    <p class="hindi-text">कंपनी द्वारा पूर्ण स्वास्थ्य बीमा</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">🏠</div>
+                    <h4>Accommodation</h4>
+                    <p>Company provided housing</p>
+                    <p class="hindi-text">कंपनी द्वारा आवास प्रदान</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">🍳</div>
+                    <h4>Kitchen Facilities</h4>
+                    <p>Full kitchen + shopping assistance provided</p>
+                    <p class="hindi-text">पूर्ण रसोईघर + खरीदारी सहायता</p>
+                </div>
+            </div>
+        </section>
+
         <section class="salary-section">
             <h2>💰 Compensation Details</h2>
             <div class="salary-amount">₽72,000</div>
             <p>Monthly Salary | मासिक वेतन</p>
-            <p style="margin-top: 1rem;">
-                ✅ Accommodation: Company Provided<br>
-                ✅ Food: Self-arranged<br>
-                ✅ Location: Sochi, Russia
+            <p style="margin-top: 1rem; font-size: 1.1rem;">
+                ✅ 10 hrs/day incl. breaks | 6 days/week<br>
+                ✅ Overtime per Russian Labour Laws<br>
+                ✅ 11+1 = 12 months salary guarantee<br>
+                ✅ Health Insurance + Accommodation + Kitchen
             </p>
         </section>
     </div>
 
     <footer>
-        <p><strong>Sochi Construction Project Recruitment 2026</p>
-        <p style="font-size: 0.95rem; margin-top: 0.3rem;">Contact your recruitment agent for immediate placement</p>
+        <p><strong>Sochi Construction Project Recruitment 2026</strong></p>
+        <p style="font-size: 0.95rem; margin-top: 0.3rem;">Contact your recruitment agent for immediate placement | तत्काल नियुक्ति हेतु संपर्क करें</p>
     </footer>
 </body>
 </html>
