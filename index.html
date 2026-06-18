@@ -1,237 +1,509 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sochi Construction Jobs - Russia 2026 | सूची निर्माण कार्य</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f8f9fa; }
-        header { background: linear-gradient(135deg, #c41e3a 0%, #003399 100%); color: white; padding: 2rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-        header .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
-        header h1 { font-size: 2rem; font-weight: 700; }
-        header p { font-size: 0.9rem; opacity: 0.9; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-        .hero { background: linear-gradient(135deg, #003399 0%, #1a5490 100%); color: white; padding: 4rem 2rem; text-align: center; margin-bottom: 3rem; }
-        .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; font-weight: 700; }
-        .hero p { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; }
-        .highlight-box { background: rgba(255,255,255,0.15); padding: 2rem; border-radius: 10px; margin: 2rem auto; max-width: 800px; border-left: 5px solid #c41e3a; }
-        .highlight-box strong { color: #ffd700; font-size: 1.3rem; }
-        .key-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 3rem 0; }
-        .info-card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; border-top: 4px solid #c41e3a; }
-        .info-card h3 { color: #003399; font-size: 1.3rem; margin-bottom: 0.5rem; }
-        .info-card .value { font-size: 2rem; font-weight: 700; color: #c41e3a; margin: 1rem 0; }
-        .positions-section h2 { color: #003399; font-size: 2rem; margin-bottom: 2rem; text-align: center; margin: 3rem 0 2rem 0; }
-        .positions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
-        .position-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease; border-left: 5px solid #c41e3a; }
-        .position-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
-        .position-card header { background: linear-gradient(135deg, #c41e3a 0%, #a01a2f 100%); color: white; padding: 1.5rem; }
-        .position-card header h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-        .position-card header p { opacity: 0.9; font-size: 0.95rem; }
-        .position-card .content { padding: 2rem; }
-        .position-card ul { list-style: none; margin: 1rem 0; }
-        .position-card li { padding: 0.5rem 0; border-bottom: 1px solid #eee; }
-        .position-card li:last-child { border-bottom: none; }
-        .salary-section { background: linear-gradient(135deg, #c41e3a 0%, #a01a2f 100%); color: white; padding: 3rem 2rem; border-radius: 10px; margin: 3rem 0; text-align: center; }
-        .salary-amount { font-size: 3rem; font-weight: 700; margin: 1rem 0; color: #ffd700; }
-        .benefits-section { background: white; padding: 3rem 2rem; border-radius: 10px; margin: 3rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-        .benefit-item { text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #c41e3a; }
-        .benefit-item .icon { font-size: 3rem; margin-bottom: 1rem; }
-        .hindi-subtitle { font-size: 1.8rem; opacity: 0.9; margin-bottom: 1.5rem; }
-        .hindi-text { opacity: 0.9; font-size: 0.95rem; margin-top: 0.5rem; }
-        .sochi-highlight { background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-        footer { background: #222; color: #fff; text-align: center; padding: 2rem; margin-top: 3rem; }
-        @media (max-width: 768px) { .hero h2 { font-size: 1.8rem; } .salary-amount { font-size: 2rem; } }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Hiring Demo for Indian SMBs</title>
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet" />
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem;
+      --color-bg: #f7f6f2; --color-surface: #fbfbf9; --color-surface-2: #f1efe9; --color-surface-offset: #ebe7df; --color-border: #d7d1c8;
+      --color-text: #28251d; --color-text-muted: #6e6b65; --color-text-faint: #a9a59f; --color-text-inverse: #f9f8f4;
+      --color-primary: #01696f; --color-primary-hover: #0c4e54; --color-success: #437a22; --color-warning: #da7101; --color-error: #a12c7b; --color-blue: #006494;
+      --shadow-sm: 0 1px 2px rgba(30,28,25,.06); --shadow-md: 0 8px 24px rgba(30,28,25,.09); --shadow-lg: 0 18px 48px rgba(30,28,25,.14);
+      --radius-sm: .5rem; --radius-md: .8rem; --radius-lg: 1rem; --radius-xl: 1.4rem; --radius-full: 999px;
+      --font-display: 'Cabinet Grotesk', Inter, sans-serif; --font-body: 'Satoshi', Inter, sans-serif;
+    }
+    [data-theme="dark"] {
+      --color-bg: #171614; --color-surface: #1d1c19; --color-surface-2: #23211d; --color-surface-offset: #2b2823; --color-border: #3b3833;
+      --color-text: #d8d4cc; --color-text-muted: #aaa59b; --color-text-faint: #716d65; --color-text-inverse: #111;
+      --color-primary: #57a1ac; --color-primary-hover: #78bbc4; --color-success: #76b955; --color-warning: #f1a444; --color-error: #d96eb7; --color-blue: #7ab0d2;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,.25); --shadow-md: 0 8px 24px rgba(0,0,0,.28); --shadow-lg: 0 18px 48px rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); font-size: var(--text-base); background: var(--color-bg); color: var(--color-text); min-height: 100vh; line-height: 1.55; }
+    button, input, select, textarea { font: inherit; color: inherit; }
+    button { cursor: pointer; border: 0; background: none; }
+    .app { display: grid; grid-template-columns: 290px 1fr; min-height: 100vh; }
+    .sidebar { background: linear-gradient(180deg, var(--color-surface), var(--color-surface-2)); border-right: 1px solid var(--color-border); padding: var(--space-6); position: sticky; top: 0; height: 100vh; }
+    .brand { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-8); }
+    .brand-mark { width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, var(--color-primary), var(--color-blue)); display: grid; place-items: center; color: white; font-weight: 800; box-shadow: var(--shadow-md); }
+    .brand h1 { font-family: var(--font-display); font-size: 1.2rem; }
+    .brand p { color: var(--color-text-muted); font-size: var(--text-sm); }
+    .nav { display: grid; gap: .45rem; }
+    .nav button { text-align: left; padding: .9rem 1rem; border-radius: .95rem; color: var(--color-text-muted); display: flex; align-items: center; justify-content: space-between; border: 1px solid transparent; }
+    .nav button.active { background: color-mix(in srgb, var(--color-primary) 12%, var(--color-surface)); color: var(--color-text); border-color: color-mix(in srgb, var(--color-primary) 18%, var(--color-border)); }
+    .nav small { font-size: 12px; padding: .2rem .5rem; border-radius: var(--radius-full); background: var(--color-surface-offset); }
+    .sidebar-footer { margin-top: var(--space-8); padding: var(--space-4); background: var(--color-surface-offset); border-radius: var(--radius-lg); }
+    .main { padding: var(--space-6); }
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6); }
+    .page-title h2 { font-family: var(--font-display); font-size: var(--text-xl); letter-spacing: -.03em; }
+    .page-title p { color: var(--color-text-muted); margin-top: .35rem; }
+    .actions { display: flex; gap: .75rem; align-items: center; }
+    .theme-toggle, .ghost, .primary, .secondary { padding: .85rem 1rem; border-radius: .95rem; border: 1px solid var(--color-border); background: var(--color-surface); box-shadow: var(--shadow-sm); }
+    .primary { background: var(--color-primary); color: white; border-color: var(--color-primary); }
+    .primary:hover { background: var(--color-primary-hover); }
+    .secondary { background: color-mix(in srgb, var(--color-primary) 10%, var(--color-surface)); }
+    .layout { display: grid; gap: var(--space-5); }
+    .hero-grid, .two-col, .three-col, .kpis { display: grid; gap: var(--space-5); }
+    .hero-grid { grid-template-columns: 1.25fr .9fr; }
+    .two-col { grid-template-columns: 1.2fr .8fr; }
+    .three-col { grid-template-columns: repeat(3, 1fr); }
+    .kpis { grid-template-columns: repeat(4, 1fr); }
+    .card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); padding: var(--space-5); }
+    .card h3 { font-family: var(--font-display); font-size: 1.15rem; margin-bottom: .8rem; }
+    .muted { color: var(--color-text-muted); }
+    .tiny { font-size: var(--text-xs); color: var(--color-text-muted); }
+    .metric { font-family: var(--font-display); font-size: 1.8rem; letter-spacing: -.03em; }
+    .pill { display: inline-flex; align-items: center; gap: .4rem; border-radius: var(--radius-full); padding: .35rem .7rem; font-size: var(--text-xs); background: var(--color-surface-2); border: 1px solid var(--color-border); }
+    .good { color: var(--color-success); }
+    .warn { color: var(--color-warning); }
+    .bad { color: var(--color-error); }
+    .form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .field { display: grid; gap: .45rem; }
+    .field label { font-size: var(--text-sm); color: var(--color-text-muted); }
+    .field input, .field select, .field textarea { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: .9rem; padding: .85rem 1rem; width: 100%; }
+    textarea { min-height: 130px; resize: vertical; }
+    .list { display: grid; gap: .75rem; }
+    .list li { list-style: none; padding: .8rem .9rem; background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: .9rem; }
+    .platform-row, .candidate-row, .score-row { display: flex; justify-content: space-between; gap: 1rem; align-items: center; padding: .85rem 0; border-bottom: 1px solid var(--color-border); }
+    .platform-row:last-child, .candidate-row:last-child, .score-row:last-child { border-bottom: 0; }
+    .status { padding: .3rem .6rem; border-radius: var(--radius-full); font-size: var(--text-xs); font-weight: 700; }
+    .s-posted { background: color-mix(in srgb, var(--color-success) 14%, transparent); color: var(--color-success); }
+    .s-running { background: color-mix(in srgb, var(--color-blue) 14%, transparent); color: var(--color-blue); }
+    .s-pending { background: color-mix(in srgb, var(--color-warning) 16%, transparent); color: var(--color-warning); }
+    .pipeline { display: grid; grid-template-columns: repeat(6, minmax(180px, 1fr)); gap: 1rem; overflow-x: auto; padding-bottom: .5rem; }
+    .stage { min-width: 180px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 1rem; padding: 1rem; }
+    .stage h4 { font-size: var(--text-sm); margin-bottom: .8rem; }
+    .candidate { background: var(--color-surface-2); border: 1px solid var(--color-border); padding: .8rem; border-radius: .9rem; margin-bottom: .7rem; }
+    .candidate strong { display: block; }
+    .bars { display: grid; gap: .75rem; }
+    .bar { display: grid; gap: .35rem; }
+    .track { height: 10px; background: var(--color-surface-offset); border-radius: 999px; overflow: hidden; }
+    .fill { height: 100%; background: linear-gradient(90deg, var(--color-primary), var(--color-blue)); border-radius: inherit; }
+    .split { display: grid; grid-template-columns: 1fr 320px; gap: 1rem; }
+    .timeline { display: grid; gap: .9rem; }
+    .timeline-item { padding: 1rem; border-radius: 1rem; border: 1px solid var(--color-border); background: var(--color-surface-2); }
+    .shortlist-table { width: 100%; border-collapse: collapse; }
+    .shortlist-table th, .shortlist-table td { padding: .9rem .6rem; border-bottom: 1px solid var(--color-border); text-align: left; font-size: var(--text-sm); }
+    .banner { background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary) 14%, var(--color-surface)), var(--color-surface)); border: 1px solid color-mix(in srgb, var(--color-primary) 16%, var(--color-border)); }
+    .hidden { display: none; }
+    .footer-note { margin-top: var(--space-6); color: var(--color-text-muted); font-size: var(--text-sm); }
+    @media (max-width: 1100px){ .app{grid-template-columns:1fr;} .sidebar{position:relative;height:auto;} .hero-grid,.two-col,.three-col,.kpis,.split,.form-grid{grid-template-columns:1fr;} .main{padding:1rem;} }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div>
-                <h1>🇷🇺 Sochi Construction Jobs | सूची में निर्माण कार्य</h1>
-                <p>IMMEDIATE RECRUITMENT 2026 - Sochi, Russia</p>
-            </div>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">HR</div>
+        <div>
+          <h1>HirePilot India</h1>
+          <p>Demo roadmap for AI-led hiring</p>
         </div>
-    </header>
-
-    <div class="container">
-        <div class="hero">
-            <h2>🏗️ Sochi Construction Project</h2>
-            <h2 class="hindi-subtitle">सूची निर्माण परियोजना</h2>
-            <p>Urgent requirement for skilled construction professionals</p>
-            <p class="hindi-text">कुशल निर्माण पेशेवरों की तत्काल आवश्यकता</p>
-            <div class="highlight-box">
-                <p><strong>80 Positions Available Immediately</strong></p>
-                <p class="hindi-text">तत्काल 80 पद उपलब्ध</p>
-            </div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="sidebar-footer">
+        <div class="pill">Demo mode</div>
+        <p class="tiny" style="margin-top:.7rem;">This prototype simulates the future product journey for Indian SMB hiring teams, with real UI logic and seeded data.</p>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <div class="page-title">
+          <h2 id="screenTitle">Executive dashboard</h2>
+          <p id="screenDesc">A reviewable walkthrough of the full hiring workflow.</p>
         </div>
+        <div class="actions">
+          <button class="theme-toggle" data-theme-toggle>Theme</button>
+          <button class="secondary" id="autoFillBtn">Load demo scenario</button>
+          <button class="primary" id="jumpBtn">Open shortlist</button>
+        </div>
+      </div>
 
-        <section class="sochi-highlight">
-            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">📍 LOCATION: Sochi, Russia | स्थान: सूची, रूस</h3>
-            <p><strong>Monthly Salary: ₽72,000</strong> | मासिक वेतन: 72,000 रूबल</p>
-            <p style="margin-top: 0.5rem; opacity: 0.9;">Food: Self-arranged | खाना: स्वयं व्यवस्था</p>
-            <p style="margin-top: 0.3rem;">Accommodation: Company Provided | आवास: कंपनी द्वारा प्रदान</p>
-        </section>
-
-        <section class="key-info">
-            <div class="info-card">
-                <h3>Total Positions</h3>
-                <div class="value">80</div>
-                <p>Skilled Workers Required</p>
+      <section class="screen" data-screen="dashboard">
+        <div class="layout">
+          <div class="hero-grid">
+            <div class="card banner">
+              <div class="pill">Flagship scenario</div>
+              <h3 style="font-size:1.7rem;margin-top:1rem;">Hiring a Performance Marketing Manager for a Bangalore D2C brand</h3>
+              <p class="muted" style="margin-top:.8rem;">Use this as the live client walkthrough: define the vacancy, generate a JD, simulate posting, review candidates, run AI interview scoring, and land on a shortlist with explainable recommendations.</p>
+              <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem;">
+                <span class="pill">Hindi + English ready</span>
+                <span class="pill">DPDP notice included</span>
+                <span class="pill">Bias audit panel</span>
+              </div>
             </div>
-            <div class="info-card">
-                <h3>Daily Hours</h3>
-                <div class="value">10 Hrs</div>
-                <p>Including Breaks | ब्रेक सहित</p>
+            <div class="card">
+              <h3>Review goals</h3>
+              <ul class="list">
+                <li>Show investors and clients how the end-to-end product will feel.</li>
+                <li>Validate workflow before live Naukri, LinkedIn, and WhatsApp integrations.</li>
+                <li>Act as the product blueprint for engineering and design teams.</li>
+              </ul>
             </div>
-            <div class="info-card">
-                <h3>Work Week</h3>
-                <div class="value">6 Days</div>
-                <p>Per Week | प्रति सप्ताह</p>
+          </div>
+          <div class="kpis">
+            <div class="card"><div class="tiny">Projected time-to-shortlist</div><div class="metric">36 hrs</div><div class="tiny good">Down from 10-14 days</div></div>
+            <div class="card"><div class="tiny">Candidates reviewed</div><div class="metric">128</div><div class="tiny">Across 5 mocked channels</div></div>
+            <div class="card"><div class="tiny">Top shortlist output</div><div class="metric">5</div><div class="tiny">With explainable fit scores</div></div>
+            <div class="card"><div class="tiny">Compliance readiness</div><div class="metric">DPDP</div><div class="tiny warn">Consent and deletion flow included</div></div>
+          </div>
+          <div class="two-col">
+            <div class="card">
+              <h3>What this demo proves</h3>
+              <div class="timeline">
+                <div class="timeline-item"><strong>1. Structured role intake</strong><div class="muted">Three-level taxonomy plus ideal-candidate prompt creates a reusable hiring template.</div></div>
+                <div class="timeline-item"><strong>2. Real AI moments</strong><div class="muted">JD generation, interview question packs, score summaries, and recommendation notes can be genuinely AI-powered in the MVP.</div></div>
+                <div class="timeline-item"><strong>3. Mocked integrations</strong><div class="muted">Posting dashboards, platform statuses, and applicant inflow are visually simulated so the system feels operational before production APIs exist.</div></div>
+              </div>
             </div>
-            <div class="info-card">
-                <h3>Location</h3>
-                <div class="value">Sochi</div>
-                <p>Russia</p>
+            <div class="card">
+              <h3>Suggested phase plan</h3>
+              <ul class="list">
+                <li><strong>Phase 1:</strong> clickable demo for sales, investor, and internal alignment.</li>
+                <li><strong>Phase 2:</strong> semi-functional web app with OpenAI-backed JD and screening summaries.</li>
+                <li><strong>Phase 3:</strong> pilot MVP with 3-5 real clients, limited integrations, and monitored outcomes.</li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="positions-section">
-            <h2>📋 Available Positions | उपलब्ध पद</h2>
-            <div class="positions-grid">
-                <div class="position-card">
-                    <header>
-                        <h3>🔥 15 Skilled Welders</h3>
-                        <p>कुशल वेल्डर - 15 पद</p>
-                    </header>
-                    <div class="content">
-                        <ul>
-                            <li><strong>Main Tasks:</strong></li>
-                            <li>• MIG/TIG welding of steel structures</li>
-                            <li>• Structural steel fabrication</li>
-                            <li>• Pipeline and framework welding</li>
-                            <li>• Quality weld inspection</li>
-                            <li>• Safety compliance</li>
-                        </ul>
-                        <p style="margin-top: 1.5rem; color: #666;"><strong>Requirements:</strong> 3+ years experience, certifications</p>
-                    </div>
-                </div>
-
-                <div class="position-card">
-                    <header>
-                        <h3>👷 25 General Helpers</h3>
-                        <p>सामान्य सहायक - 25 पद</p>
-                    </header>
-                    <div class="content">
-                        <ul>
-                            <li><strong>Main Tasks:</strong></li>
-                            <li>• Material handling & transport</li>
-                            <li>• Site cleaning & maintenance</li>
-                            <li>• Tool & equipment support</li>
-                            <li>• General labor assistance</li>
-                            <li>• Safety protocols</li>
-                        </ul>
-                        <p style="margin-top: 1.5rem; color: #666;"><strong>Requirements:</strong> 1+ years construction experience</p>
-                    </div>
-                </div>
-
-                <div class="position-card">
-                    <header>
-                        <h3>🧱 20 Skilled Mistri</h3>
-                        <p>कुशल मिस्त्री - 20 पद</p>
-                    </header>
-                    <div class="content">
-                        <ul>
-                            <li><strong>Main Tasks:</strong></li>
-                            <li>• Brick/block masonry work</li>
-                            <li>• Plastering & finishing</li>
-                            <li>• Cement & concrete work</li>
-                            <li>• Formwork & shuttering</li>
-                            <li>• Surface leveling</li>
-                        </ul>
-                        <p style="margin-top: 1.5rem; color: #666;"><strong>Requirements:</strong> 3+ years masonry experience</p>
-                    </div>
-                </div>
-
-                <div class="position-card">
-                    <header>
-                        <h3>🪟 20 Skilled Glaziers</h3>
-                        <p>कुशल कांच लगाने वाले - 20 पद</p>
-                    </header>
-                    <div class="content">
-                        <ul>
-                            <li><strong>Main Tasks:</strong></li>
-                            <li>• Glass installation & replacement</li>
-                            <li>• Window & door framing</li>
-                            <li>• Mirror & glass panel fitting</li>
-                            <li>• Sealing & waterproofing</li>
-                            <li>• Safety glass handling</li>
-                        </ul>
-                        <p style="margin-top: 1.5rem; color: #666;"><strong>Requirements:</strong> 2+ years glazing experience</p>
-                    </div>
-                </div>
+      <section class="screen hidden" data-screen="setup">
+        <div class="two-col">
+          <div class="card">
+            <h3>Company setup</h3>
+            <div class="form-grid">
+              <div class="field"><label>Company name</label><input id="companyName" value="GlowKart D2C" /></div>
+              <div class="field"><label>Industry</label><select id="industry"><option>D2C / E-commerce</option><option>SaaS</option><option>BPO</option><option>CA Firm</option></select></div>
+              <div class="field"><label>Company size</label><select id="companySize"><option>25-50 employees</option><option>1-10 employees</option><option>10-25 employees</option><option>50-200 employees</option></select></div>
+              <div class="field"><label>City</label><select id="city"><option>Bangalore</option><option>Noida</option><option>Mumbai</option><option>Jaipur</option></select></div>
+              <div class="field"><label>Preferred hiring languages</label><input id="languages" value="English, Hindi, Kannada" /></div>
+              <div class="field"><label>Current HR stack</label><input id="stack" value="Google Sheets, WhatsApp Business, Tally" /></div>
             </div>
-        </section>
-
-        <section class="benefits-section">
-            <h2 style="color: #003399; text-align: center; margin-bottom: 2rem;">🎁 Complete Benefits Package | संपूर्ण लाभ पैकेज</h2>
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <div class="icon">⏰</div>
-                    <h4>Work Schedule</h4>
-                    <p>10 hours/day (incl. breaks) | 6 days/week</p>
-                    <p class="hindi-text">10 घंटे/दिन (ब्रेक सहित) | 6 दिन/सप्ताह</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="icon">💰</div>
-                    <h4>Overtime Pay</h4>
-                    <p>Available as needed - Paid per Russian Labour Laws</p>
-                    <p class="hindi-text">आवश्यकता अनुसार - रूसी श्रम कानून अनुसार भुगतान</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="icon">🏖️</div>
-                    <h4>Paid Leave</h4>
-                    <p>1 month paid leave after 11 months | 11+1 = 12 months salary</p>
-                    <p class="hindi-text">11 महीने पूरे करने पर 1 महीने की पेड लीव | 11+1=12 महीने वेतन</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="icon">🏥</div>
-                    <h4>Health Insurance</h4>
-                    <p>Complete coverage provided by company</p>
-                    <p class="hindi-text">कंपनी द्वारा पूर्ण स्वास्थ्य बीमा</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="icon">🏠</div>
-                    <h4>Accommodation</h4>
-                    <p>Company provided housing</p>
-                    <p class="hindi-text">कंपनी द्वारा आवास प्रदान</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="icon">🍳</div>
-                    <h4>Kitchen Facilities</h4>
-                    <p>Full kitchen + shopping assistance provided</p>
-                    <p class="hindi-text">पूर्ण रसोईघर + खरीदारी सहायता</p>
-                </div>
+            <div style="margin-top:1rem;display:flex;gap:.75rem;flex-wrap:wrap;">
+              <button class="primary" onclick="go('vacancy')">Save and continue</button>
+              <button class="ghost" onclick="loadScenario()">Use flagship demo data</button>
             </div>
-        </section>
+          </div>
+          <div class="card">
+            <h3>Connected platforms</h3>
+            <div class="list">
+              <li>Naukri — <span class="good">Connected</span></li>
+              <li>LinkedIn — <span class="good">Connected</span></li>
+              <li>Indeed India — <span class="good">Connected</span></li>
+              <li>Apna — <span class="warn">Mock sync</span></li>
+              <li>WhatsApp Business — <span class="good">Connected</span></li>
+            </div>
+            <p class="footer-note">For the demo, platform connection states are intentionally visual. In the pilot MVP, connect only 1-2 channels first.</p>
+          </div>
+        </div>
+      </section>
 
-        <section class="salary-section">
-            <h2>💰 Compensation Details</h2>
-            <div class="salary-amount">₽72,000</div>
-            <p>Monthly Salary | मासिक वेतन</p>
-            <p style="margin-top: 1rem; font-size: 1.1rem;">
-                ✅ 10 hrs/day incl. breaks | 6 days/week<br>
-                ✅ Overtime per Russian Labour Laws<br>
-                ✅ 11+1 = 12 months salary guarantee<br>
-                ✅ Health Insurance + Accommodation + Kitchen
-            </p>
-        </section>
-    </div>
+      <section class="screen hidden" data-screen="vacancy">
+        <div class="two-col">
+          <div class="card">
+            <h3>Create vacancy</h3>
+            <div class="form-grid">
+              <div class="field"><label>Domain</label><select id="domain"><option>Marketing</option><option>Technology</option><option>Sales</option><option>Finance & Accounting</option></select></div>
+              <div class="field"><label>Specialization</label><select id="specialization"><option>Digital Marketing</option><option>Software Development</option><option>Inside Sales</option></select></div>
+              <div class="field"><label>Sub-specialization</label><select id="subspecialization"><option>Performance Marketing</option><option>SEO & Content</option><option>Social Media Marketing</option></select></div>
+              <div class="field"><label>Experience</label><input id="experience" value="3-5 years" /></div>
+              <div class="field"><label>Salary range</label><input id="salary" value="₹8L - ₹11L" /></div>
+              <div class="field"><label>Work mode</label><select id="workmode"><option>Hybrid</option><option>On-site</option><option>Remote</option></select></div>
+              <div class="field"><label>Languages preferred</label><input id="roleLanguages" value="English, Hindi" /></div>
+              <div class="field"><label>Urgency</label><select id="urgency"><option>High - close in 2 weeks</option><option>Medium</option><option>Low</option></select></div>
+            </div>
+            <div class="field" style="margin-top:1rem;">
+              <label>Ideal candidate description</label>
+              <textarea id="candidateBrief">Need someone who has managed Meta and Google Ads for a consumer brand, understands ROAS and CAC, can work with creative teams, and can explain campaign performance clearly to founders.</textarea>
+            </div>
+            <div style="margin-top:1rem;display:flex;gap:.75rem;flex-wrap:wrap;">
+              <button class="primary" onclick="generateJD()">Generate JD</button>
+              <button class="secondary" onclick="suggestSkills()">Suggest skills</button>
+              <button class="ghost" onclick="go('posting')">Skip to posting</button>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Workflow guidance</h3>
+            <ul class="list">
+              <li>Use a hierarchical role taxonomy so every role triggers pre-built screening logic, salary benchmarks, and interview criteria.</li>
+              <li>Keep the demo transparent: show weighted scoring logic instead of claiming black-box machine learning.</li>
+              <li>Capture consent language and retention defaults from day one to match future DPDP readiness.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <footer>
-        <p><strong>Sochi Construction Project Recruitment 2026</strong></p>
-        <p style="font-size: 0.95rem; margin-top: 0.3rem;">Contact your recruitment agent for immediate placement | तत्काल नियुक्ति हेतु संपर्क करें</p>
-    </footer>
+      <section class="screen hidden" data-screen="jd">
+        <div class="split">
+          <div class="card">
+            <div class="pill">AI-generated draft</div>
+            <h3 id="jdTitle" style="margin-top:1rem;">Performance Marketing Manager</h3>
+            <p class="muted" id="jdSummary">Own paid growth across Meta and Google, optimize CAC and ROAS, and partner with creative and founder teams to scale revenue efficiently.</p>
+            <div class="three-col" style="margin-top:1rem;grid-template-columns:repeat(3,1fr);">
+              <div><div class="tiny">Salary benchmark</div><strong id="jdSalary">₹8L - ₹11L</strong></div>
+              <div><div class="tiny">Hiring urgency</div><strong>High</strong></div>
+              <div><div class="tiny">Expected volume</div><strong>High application flow</strong></div>
+            </div>
+            <div class="two-col" style="margin-top:1rem;grid-template-columns:1fr 1fr;">
+              <div>
+                <h3>Must-have skills</h3>
+                <ul class="list" id="mustHaveList"></ul>
+              </div>
+              <div>
+                <h3>Interview flow</h3>
+                <ul class="list" id="interviewFlowList"></ul>
+              </div>
+            </div>
+            <div style="margin-top:1rem;">
+              <h3>Job description</h3>
+              <p id="jdBody" class="muted"></p>
+            </div>
+          </div>
+          <div class="card">
+            <h3>AI insights</h3>
+            <ul class="list">
+              <li>Prioritize candidates who can explain campaign metrics in business terms, not just platform language.</li>
+              <li>Benchmark salaries higher for candidates with D2C scaling experience and strong creative collaboration.</li>
+              <li>Screen for hands-on ownership of budget optimization, audience testing, and reporting cadence.</li>
+              <li>Use Hindi or local-language outreach for broader top-of-funnel engagement if targeting Tier-2 talent.</li>
+            </ul>
+            <div style="margin-top:1rem;display:flex;gap:.75rem;flex-wrap:wrap;">
+              <button class="primary" onclick="go('posting')">Approve and post</button>
+              <button class="secondary" onclick="go('vacancy')">Edit vacancy</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen hidden" data-screen="posting">
+        <div class="two-col">
+          <div class="card">
+            <h3>Multi-platform posting dashboard</h3>
+            <div id="platforms"></div>
+          </div>
+          <div class="card">
+            <h3>Caption preview</h3>
+            <p class="muted">We are hiring a Performance Marketing Manager in Bangalore for a fast-growing D2C brand. Looking for hands-on experience with Google Ads, Meta Ads, ROAS optimization, and founder-facing reporting. Apply now for a hybrid role with strong growth ownership.</p>
+            <div style="margin-top:1rem;" class="list">
+              <li>Audience quality score: 8.6 / 10</li>
+              <li>Best channel for speed: Naukri</li>
+              <li>Best channel for niche relevance: LinkedIn</li>
+              <li>Best channel for multilingual outreach: WhatsApp campaign</li>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen hidden" data-screen="pipeline">
+        <div class="layout">
+          <div class="card">
+            <h3>Candidate pipeline</h3>
+            <div class="pipeline" id="pipeline"></div>
+          </div>
+          <div class="two-col">
+            <div class="card">
+              <h3>Selected candidate profile</h3>
+              <div id="candidateDetail"></div>
+            </div>
+            <div class="card">
+              <h3>Fit score breakdown</h3>
+              <div class="bars" id="scoreBars"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen hidden" data-screen="interview">
+        <div class="two-col">
+          <div class="card">
+            <h3>AI first-round interview</h3>
+            <div class="timeline">
+              <div class="timeline-item"><strong>Q1:</strong> Explain a campaign where you improved ROAS.<br><span class="muted">Candidate: Reduced wasted spend by segmenting high-intent audiences, improved creatives weekly, and raised ROAS from 2.4 to 4.1 in 10 weeks.</span></div>
+              <div class="timeline-item"><strong>AI note:</strong> Strong metric ownership and hands-on optimization. Good evidence of experimentation discipline.</div>
+              <div class="timeline-item"><strong>Q2:</strong> How do you work with founders and creative teams?<br><span class="muted">Candidate: I share a weekly dashboard, explain what is moving CAC, and align creatives to landing-page and audience performance patterns.</span></div>
+              <div class="timeline-item"><strong>AI note:</strong> Strong communication clarity with good cross-functional maturity for an SMB environment.</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Evaluation panel</h3>
+            <div class="bars">
+              <div class="bar"><div class="score-row"><span>Communication clarity</span><strong>84</strong></div><div class="track"><div class="fill" style="width:84%"></div></div></div>
+              <div class="bar"><div class="score-row"><span>Technical knowledge</span><strong>91</strong></div><div class="track"><div class="fill" style="width:91%"></div></div></div>
+              <div class="bar"><div class="score-row"><span>Problem solving</span><strong>88</strong></div><div class="track"><div class="fill" style="width:88%"></div></div></div>
+              <div class="bar"><div class="score-row"><span>Role relevance</span><strong>90</strong></div><div class="track"><div class="fill" style="width:90%"></div></div></div>
+              <div class="bar"><div class="score-row"><span>Red flag risk</span><strong>Low</strong></div><div class="track"><div class="fill" style="width:18%"></div></div></div>
+            </div>
+            <p class="footer-note">Position this screen as AI-assisted first-round evaluation, not final decision automation.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen hidden" data-screen="shortlist">
+        <div class="layout">
+          <div class="card banner">
+            <h3>Final shortlist dashboard</h3>
+            <p class="muted">The employer sees ranked candidates, fit reasons, compensation notes, and next-step guidance. This is the payoff screen for your demo narrative.</p>
+          </div>
+          <div class="card">
+            <table class="shortlist-table">
+              <thead>
+                <tr><th>Candidate</th><th>Fit score</th><th>Salary fit</th><th>Interview score</th><th>Notice period</th><th>Recommendation</th></tr>
+              </thead>
+              <tbody id="shortlistBody"></tbody>
+            </table>
+          </div>
+          <div class="three-col">
+            <div class="card"><div class="tiny">Top recommendation</div><div class="metric">Aditi</div><div class="tiny">Best overall skill and growth fit</div></div>
+            <div class="card"><div class="tiny">Fastest joiner</div><div class="metric">Rahul</div><div class="tiny">Immediate to 15-day notice window</div></div>
+            <div class="card"><div class="tiny">Best budget fit</div><div class="metric">Neha</div><div class="tiny">Strong value within benchmark band</div></div>
+          </div>
+          <div class="two-col">
+            <div class="card">
+              <h3>Bias and compliance panel</h3>
+              <ul class="list">
+                <li>Protected attributes are excluded from ranking inputs in the demo logic.</li>
+                <li>Candidate-facing consent notice is shown before interview and profile processing.</li>
+                <li>Explainability notes show why a candidate ranked high or low.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Roadmap after demo approval</h3>
+              <ul class="list">
+                <li>Replace mock posting statuses with 1-2 live channels first.</li>
+                <li>Add real LLM calls for JD generation, outreach copy, and interview summaries.</li>
+                <li>Log recruiter edits and final outcomes to improve future ranking quality.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const screens = [
+      ['dashboard','Executive dashboard','A reviewable walkthrough of the full hiring workflow.'],
+      ['setup','Company setup','Configure company context and connected tools.'],
+      ['vacancy','Create vacancy','Define the role taxonomy and ideal candidate profile.'],
+      ['jd','AI-generated JD','Preview the draft job description and hiring insights.'],
+      ['posting','Posting dashboard','Simulate multi-platform publishing and inflow.'],
+      ['pipeline','Candidate pipeline','Inspect candidates, fit scores, and recommendations.'],
+      ['interview','AI interview','Review first-round interview analysis and scoring.'],
+      ['shortlist','Final shortlist','Present the ranked finalists with explainability.']
+    ];
+
+    const candidates = [
+      {name:'Aditi Sharma', role:'Senior Growth Associate', city:'Bangalore', exp:'4.5 yrs', salary:'₹10.2L', fit:91, interview:89, notice:'30 days', rec:'Strong hire', skill:88, experience:90, industry:92, communication:84, salaryAlign:90, source:'LinkedIn', why:'Scaled Meta and Google campaigns for a D2C skincare brand with strong ROAS reporting.'},
+      {name:'Rahul Mehta', role:'Performance Marketer', city:'Bangalore', exp:'3.8 yrs', salary:'₹9.4L', fit:88, interview:92, notice:'Immediate', rec:'Strong hire', skill:86, experience:82, industry:90, communication:91, salaryAlign:89, source:'Naukri', why:'Strong founder communication and quick joining timeline.'},
+      {name:'Neha Singh', role:'Digital Growth Specialist', city:'Mumbai', exp:'5.1 yrs', salary:'₹11.0L', fit:84, interview:81, notice:'15 days', rec:'Good fit', skill:83, experience:88, industry:80, communication:82, salaryAlign:87, source:'Indeed', why:'Balanced fit with strong budgeting discipline.'},
+      {name:'Vikram Rao', role:'Paid Media Executive', city:'Bangalore', exp:'2.9 yrs', salary:'₹7.8L', fit:79, interview:74, notice:'45 days', rec:'Consider', skill:80, experience:70, industry:77, communication:76, salaryAlign:92, source:'Apna', why:'Budget-friendly but needs mentorship for strategy depth.'}
+    ];
+
+    const platformData = [
+      ['Naukri','Posted','48','9:12 AM','8.8/10','s-posted'],
+      ['LinkedIn','Posted','23','9:19 AM','9.1/10','s-posted'],
+      ['Indeed India','Posted','17','9:26 AM','7.9/10','s-posted'],
+      ['Apna','Pending','0','9:40 AM','6.8/10','s-pending'],
+      ['WhatsApp Campaign','Running','12 responses','9:44 AM','8.3/10','s-running']
+    ];
+
+    const pipelineStages = {
+      'Applied':['Aditi Sharma','Rahul Mehta','Neha Singh','Vikram Rao'],
+      'AI Reviewed':['Aditi Sharma','Rahul Mehta','Neha Singh'],
+      'Shortlisted':['Aditi Sharma','Rahul Mehta','Neha Singh'],
+      'Interview Scheduled':['Aditi Sharma','Rahul Mehta'],
+      'Interviewed':['Aditi Sharma','Rahul Mehta'],
+      'Finalists':['Aditi Sharma','Rahul Mehta','Neha Singh']
+    };
+
+    function renderNav(){
+      const nav = document.getElementById('nav');
+      nav.innerHTML = screens.map(([id,title],i)=>`<button onclick="go('${id}')" id="nav-${id}"><span>${i+1}. ${title}</span><small>${id==='shortlist'?'Live':''}</small></button>`).join('');
+    }
+
+    function go(id){
+      document.querySelectorAll('.screen').forEach(s=>s.classList.add('hidden'));
+      document.querySelector(`.screen[data-screen="${id}"]`).classList.remove('hidden');
+      document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));
+      document.getElementById(`nav-${id}`).classList.add('active');
+      const meta = screens.find(s=>s[0]===id); document.getElementById('screenTitle').textContent = meta[1]; document.getElementById('screenDesc').textContent = meta[2];
+    }
+
+    function loadScenario(){
+      document.getElementById('companyName').value='GlowKart D2C';
+      document.getElementById('candidateBrief').value='Need someone who has managed Meta and Google Ads for a consumer brand, understands ROAS and CAC, can work with creative teams, and can explain campaign performance clearly to founders.';
+      generateJD();
+      go('setup');
+    }
+
+    function suggestSkills(){
+      alert('Suggested skills: Google Ads, Meta Ads, CAC / ROAS optimization, attribution, A/B testing, dashboard reporting, creative collaboration.');
+    }
+
+    function generateJD(){
+      const sub = document.getElementById('subspecialization').value;
+      const salary = document.getElementById('salary').value;
+      document.getElementById('jdTitle').textContent = `${sub} Manager`;
+      document.getElementById('jdSalary').textContent = salary;
+      document.getElementById('jdBody').textContent = `We are looking for a hands-on ${sub.toLowerCase()} leader who can own paid acquisition, improve marketing efficiency, and translate campaign data into practical decisions for founders and creative teams. The ideal candidate has experience with Google Ads and Meta Ads, understands CAC, ROAS, attribution, and can manage weekly optimization cycles in a fast-moving SMB environment.`;
+      document.getElementById('mustHaveList').innerHTML = ['Google Ads and Meta Ads ownership','CAC and ROAS optimization','A/B testing and audience segmentation','Weekly reporting for founders','Creative coordination'].map(v=>`<li>${v}</li>`).join('');
+      document.getElementById('interviewFlowList').innerHTML = ['AI pre-screen chat or voice round','Skills-based campaign deep dive','Founder interview with rubric','Compensation and notice check'].map(v=>`<li>${v}</li>`).join('');
+      go('jd');
+    }
+
+    function renderPlatforms(){
+      document.getElementById('platforms').innerHTML = platformData.map(([name,status,apps,time,quality,cls])=>`
+        <div class="platform-row">
+          <div><strong>${name}</strong><div class="tiny">Posted at ${time}</div></div>
+          <div class="status ${cls}">${status}</div>
+          <div class="tiny">Applicants: ${apps}</div>
+          <div class="tiny">Quality: ${quality}</div>
+        </div>`).join('');
+    }
+
+    function renderPipeline(){
+      const holder = document.getElementById('pipeline');
+      holder.innerHTML = Object.entries(pipelineStages).map(([stage,names])=>`
+        <div class="stage"><h4>${stage}</h4>${names.map(n=>{const c=candidates.find(x=>x.name===n);return `<div class="candidate" onclick="selectCandidate('${c.name}')"><strong>${c.name}</strong><span class="tiny">${c.role}</span><span class="tiny">Fit ${c.fit}</span></div>`}).join('')}</div>`).join('');
+      selectCandidate('Aditi Sharma');
+    }
+
+    function selectCandidate(name){
+      const c = candidates.find(x=>x.name===name);
+      document.getElementById('candidateDetail').innerHTML = `
+        <div class="candidate-row"><span>Name</span><strong>${c.name}</strong></div>
+        <div class="candidate-row"><span>Current role</span><strong>${c.role}</strong></div>
+        <div class="candidate-row"><span>Experience</span><strong>${c.exp}</strong></div>
+        <div class="candidate-row"><span>Expected salary</span><strong>${c.salary}</strong></div>
+        <div class="candidate-row"><span>Source</span><strong>${c.source}</strong></div>
+        <p class="footer-note">${c.why}</p>`;
+      document.getElementById('scoreBars').innerHTML = [
+        ['Skill match', c.skill], ['Experience match', c.experience], ['Industry match', c.industry], ['Communication prediction', c.communication], ['Salary alignment', c.salaryAlign]
+      ].map(([label,val])=>`<div class="bar"><div class="score-row"><span>${label}</span><strong>${val}%</strong></div><div class="track"><div class="fill" style="width:${val}%"></div></div></div>`).join('');
+    }
+
+    function renderShortlist(){
+      document.getElementById('shortlistBody').innerHTML = candidates.slice(0,3).map(c=>`<tr><td>${c.name}</td><td>${c.fit}</td><td>${c.salary}</td><td>${c.interview}</td><td>${c.notice}</td><td>${c.rec}</td></tr>`).join('');
+    }
+
+    document.querySelector('[data-theme-toggle]').addEventListener('click', ()=>{
+      const root = document.documentElement;
+      root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+    document.getElementById('autoFillBtn').addEventListener('click', loadScenario);
+    document.getElementById('jumpBtn').addEventListener('click', ()=>go('shortlist'));
+
+    renderNav(); renderPlatforms(); renderPipeline(); renderShortlist(); go('dashboard');
+  </script>
 </body>
 </html>
